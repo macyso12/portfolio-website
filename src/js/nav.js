@@ -37,13 +37,12 @@ document.addEventListener('click', (e) => {
   }
 })
 
-// Set aria-current based on current path
-const currentPath = window.location.pathname
+// Set aria-current based on current page filename
+const currentFile = window.location.pathname.split('/').pop() || 'index.html'
 document.querySelectorAll('.nav-links a').forEach((link) => {
   const href = link.getAttribute('href')
-  const isHome = href === '/' && (currentPath === '/' || currentPath === '/index.html')
-  const isMatch = href !== '/' && currentPath.includes(href.replace('.html', ''))
-  if (isHome || isMatch) {
+  const linkFile = href.split('/').pop()
+  if (linkFile === currentFile || (currentFile === '' && linkFile === 'index.html')) {
     link.setAttribute('aria-current', 'page')
   }
 })
