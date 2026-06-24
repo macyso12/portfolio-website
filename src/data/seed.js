@@ -109,8 +109,8 @@ if (count === 0) {
   console.log(`Seeded ${placeholders.length} placeholder projects.`)
 }
 
-// Export JSON per category
-mkdirSync(join(root, 'data'), { recursive: true })
+// Export JSON per category into public/data/ so Vite copies it to dist/
+mkdirSync(join(root, 'public', 'data'), { recursive: true })
 
 const categories = ['industry-work', 'creative-direction', 'photography']
 categories.forEach((cat) => {
@@ -120,7 +120,7 @@ categories.forEach((cat) => {
     images: JSON.parse(r.images),
     tags: JSON.parse(r.tags),
   }))
-  const outPath = join(root, 'data', `${cat}.json`)
+  const outPath = join(root, 'public', 'data', `${cat}.json`)
   writeFileSync(outPath, JSON.stringify(parsed, null, 2))
   console.log(`Written ${outPath} (${parsed.length} projects)`)
 })

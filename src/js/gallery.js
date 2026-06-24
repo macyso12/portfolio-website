@@ -80,7 +80,8 @@ export function renderGrid(projects, container, options = {}) {
 
 export async function initGallery(jsonPath, container, options = {}) {
   try {
-    const res = await fetch(jsonPath)
+    const url = import.meta.env.BASE_URL.replace(/\/$/, '') + jsonPath
+    const res = await fetch(url)
     if (!res.ok) throw new Error(`Failed to load ${jsonPath}`)
     const projects = await res.json()
     renderGrid(projects, container, options)

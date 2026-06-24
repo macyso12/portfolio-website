@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/portfolio-website/' : '/',
   build: {
     rollupOptions: {
       input: {
@@ -13,4 +14,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
