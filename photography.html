@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography — Karen Hsu</title>
+  <meta name="description" content="Photography portfolio by fashion artist Karen Hsu." />
+  <meta property="og:title" content="Photography — Karen Hsu" />
+  <meta property="og:description" content="Photography portfolio by fashion artist Karen Hsu." />
+  <meta property="og:image" content="/images/og-photography.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/src/css/tokens.css" />
+  <link rel="stylesheet" href="/src/css/reset.css" />
+  <link rel="stylesheet" href="/src/css/placeholders.css" />
+  <link rel="stylesheet" href="/src/css/global.css" />
+  <link rel="stylesheet" href="/src/css/gallery.css" />
+  <link rel="stylesheet" href="/src/css/photography.css" />
+</head>
+<body data-page="photography">
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Karen Hsu — home">Karen Hsu</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/industry-work.html">Industry Work</a></li>
+      <li><a href="/creative-direction.html">Creative Direction</a></li>
+      <li><a href="/photography.html" aria-current="page">Photography</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <header class="page-hero">
+      <h1>Photography</h1>
+      <p>Through the Lens</p>
+    </header>
+    <section aria-label="Photography gallery">
+      <div id="gallery-grid" class="gallery-grid gallery-grid--photo" role="list" aria-live="polite" aria-label="Photography projects"></div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox lightbox--minimal" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lightbox-close" aria-label="Close viewer">✕</button>
+    <button class="lightbox-prev" aria-label="Previous photo">←</button>
+    <button class="lightbox-next" aria-label="Next photo">→</button>
+    <div class="lightbox-inner">
+      <img class="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <h2 class="lightbox-title"></h2>
+        <p class="lightbox-details"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <nav class="footer-socials" aria-label="Social links">
+      <a href="https://instagram.com/karenhsu" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://linkedin.com/in/karenhsu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hello@karenhsu.com">Email</a>
+    </nav>
+    <p class="footer-copy">© 2026 Karen Hsu</p>
+  </footer>
+
+  <script type="module" src="/src/js/nav.js"></script>
+  <script type="module">
+    import { initGallery } from '/src/js/gallery.js'
+    initGallery('/data/photography.json', document.getElementById('gallery-grid'), { photoMode: true })
+  </script>
+</body>
+</html>

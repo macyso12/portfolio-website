@@ -1,0 +1,38 @@
+[
+  {
+    "id": 6,
+    "title": "Between Seasons",
+    "category": "photography",
+    "cover_image": "/images/photography/between-seasons.jpg",
+    "images": [
+      "/images/photography/between-seasons.jpg"
+    ],
+    "description": "Personal series exploring transitional light and the body in landscape.",
+    "client": null,
+    "role": "Photographer",
+    "year": 2024,
+    "tags": [
+      "personal",
+      "landscape",
+      "body"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Studio Portraits",
+    "category": "photography",
+    "cover_image": "/images/photography/studio-portraits.jpg",
+    "images": [
+      "/images/photography/studio-portraits.jpg"
+    ],
+    "description": "Controlled studio work examining texture, shadow, and material presence.",
+    "client": null,
+    "role": "Photographer",
+    "year": 2023,
+    "tags": [
+      "studio",
+      "portrait",
+      "texture"
+    ]
+  }
+]

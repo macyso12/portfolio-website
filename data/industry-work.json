@@ -1,0 +1,56 @@
+[
+  {
+    "id": 2,
+    "title": "SSENSE — Campaign AW24",
+    "category": "industry-work",
+    "cover_image": "/images/industry-work/ssense-aw24.jpg",
+    "images": [
+      "/images/industry-work/ssense-aw24.jpg"
+    ],
+    "description": "Autumn/Winter campaign for SSENSE digital platform featuring emerging designers.",
+    "client": "SSENSE",
+    "role": "Creative Stylist",
+    "year": 2024,
+    "tags": [
+      "campaign",
+      "digital",
+      "luxury"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Vogue Italia — Spring Editorial",
+    "category": "industry-work",
+    "cover_image": "/images/industry-work/vogue-spring.jpg",
+    "images": [
+      "/images/industry-work/vogue-spring.jpg"
+    ],
+    "description": "Spring/Summer editorial exploring the tension between structure and fluidity in contemporary womenswear.",
+    "client": "Vogue Italia",
+    "role": "Fashion Stylist",
+    "year": 2024,
+    "tags": [
+      "editorial",
+      "womenswear",
+      "print"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Dazed — Emerging Designers",
+    "category": "industry-work",
+    "cover_image": "/images/industry-work/dazed-emerging.jpg",
+    "images": [
+      "/images/industry-work/dazed-emerging.jpg"
+    ],
+    "description": "Feature story on five emerging designers reshaping London fashion week.",
+    "client": "Dazed Magazine",
+    "role": "Fashion Editor",
+    "year": 2023,
+    "tags": [
+      "editorial",
+      "emerging",
+      "london"
+    ]
+  }
+]

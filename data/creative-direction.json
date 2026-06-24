@@ -1,0 +1,38 @@
+[
+  {
+    "id": 4,
+    "title": "Maison Léa — Brand Identity",
+    "category": "creative-direction",
+    "cover_image": "/images/creative-direction/maison-lea.jpg",
+    "images": [
+      "/images/creative-direction/maison-lea.jpg"
+    ],
+    "description": "Complete visual identity for Maison Léa, a Paris-based atelier. Concept rooted in archival textile research.",
+    "client": "Maison Léa",
+    "role": "Creative Director",
+    "year": 2024,
+    "tags": [
+      "branding",
+      "identity",
+      "atelier"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Soft Hours — Launch Campaign",
+    "category": "creative-direction",
+    "cover_image": "/images/creative-direction/soft-hours.jpg",
+    "images": [
+      "/images/creative-direction/soft-hours.jpg"
+    ],
+    "description": "Creative direction for the launch campaign of Soft Hours, a slow-fashion label focused on natural dyes.",
+    "client": "Soft Hours",
+    "role": "Creative Director",
+    "year": 2023,
+    "tags": [
+      "campaign",
+      "slow-fashion",
+      "natural"
+    ]
+  }
+]

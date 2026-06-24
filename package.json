@@ -1,0 +1,27 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node src/data/seed.js",
+    "dev": "vite",
+    "prebuild": "node src/data/seed.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "axe-playwright": "^2.0.3",
+    "jsdom": "^29.1.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "three": "^0.177.0"
+  }
+}

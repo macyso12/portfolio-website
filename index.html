@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Hsu — Fashion Artist</title>
+  <meta name="description" content="Karen Hsu is a fashion artist working across industry editorial, creative direction, and photography." />
+  <meta property="og:title" content="Karen Hsu — Fashion Artist" />
+  <meta property="og:description" content="Fashion artist working across editorial, creative direction, and photography." />
+  <meta property="og:image" content="/images/og-home.jpg" />
+  <meta property="og:url" content="https://karenhsu.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/src/css/tokens.css" />
+  <link rel="stylesheet" href="/src/css/reset.css" />
+  <link rel="stylesheet" href="/src/css/placeholders.css" />
+  <link rel="stylesheet" href="/src/css/global.css" />
+  <link rel="stylesheet" href="/src/css/home.css" />
+</head>
+<body data-page="home">
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Karen Hsu — home">Karen Hsu</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/industry-work.html">Industry Work</a></li>
+      <li><a href="/creative-direction.html">Creative Direction</a></li>
+      <li><a href="/photography.html">Photography</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div id="hero-canvas" aria-hidden="true"></div>
+      <img id="hero-fallback" src="/images/hero-fallback.jpg" alt="" aria-hidden="true" />
+      <div class="hero-text">
+        <p class="hero-eyebrow">Fashion Artist</p>
+        <h1 class="hero-name">Karen<br>Hsu</h1>
+        <a href="/industry-work.html" class="hero-cta">View Work</a>
+      </div>
+    </section>
+
+    <!-- Artist statement -->
+    <section class="about reveal" aria-label="About">
+      <div class="container about-inner">
+        <div class="about-portrait">
+          <img src="/images/portrait.jpg" alt="Karen Hsu" width="480" height="600" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <p class="about-statement">
+            I work at the intersection of fashion, image, and concept —
+            translating identity into visual language across editorial,
+            brand, and lens.
+          </p>
+          <a href="/contact.html" class="text-link">Get in touch →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section previews -->
+    <section class="previews" aria-label="Work previews">
+      <div class="container">
+        <ul class="preview-grid" role="list">
+          <li class="preview-card reveal">
+            <a href="/industry-work.html" class="preview-link">
+              <div class="preview-image-wrap">
+                <img src="/images/preview-industry.jpg" alt="Industry Work" width="600" height="750" loading="lazy" />
+              </div>
+              <div class="preview-label">
+                <span class="preview-index">01</span>
+                <span class="preview-title">Industry Work</span>
+                <span class="preview-arrow">→</span>
+              </div>
+            </a>
+          </li>
+          <li class="preview-card reveal">
+            <a href="/creative-direction.html" class="preview-link">
+              <div class="preview-image-wrap">
+                <img src="/images/preview-cd.jpg" alt="Creative Direction" width="600" height="750" loading="lazy" />
+              </div>
+              <div class="preview-label">
+                <span class="preview-index">02</span>
+                <span class="preview-title">Creative Direction</span>
+                <span class="preview-arrow">→</span>
+              </div>
+            </a>
+          </li>
+          <li class="preview-card reveal">
+            <a href="/photography.html" class="preview-link">
+              <div class="preview-image-wrap">
+                <img src="/images/preview-photo.jpg" alt="Photography" width="600" height="750" loading="lazy" />
+              </div>
+              <div class="preview-label">
+                <span class="preview-index">03</span>
+                <span class="preview-title">Photography</span>
+                <span class="preview-arrow">→</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-socials" aria-label="Social links">
+      <a href="https://instagram.com/karenhsu" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://linkedin.com/in/karenhsu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hello@karenhsu.com">Email</a>
+    </nav>
+    <p class="footer-copy">© 2026 Karen Hsu</p>
+  </footer>
+
+  <script type="module" src="/src/js/nav.js"></script>
+  <script type="module" src="/src/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Karen Hsu</title>
+  <meta name="description" content="Get in touch with fashion artist Karen Hsu." />
+  <meta property="og:title" content="Contact — Karen Hsu" />
+  <meta property="og:description" content="Get in touch with fashion artist Karen Hsu." />
+  <meta property="og:image" content="/images/og-contact.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/src/css/tokens.css" />
+  <link rel="stylesheet" href="/src/css/reset.css" />
+  <link rel="stylesheet" href="/src/css/placeholders.css" />
+  <link rel="stylesheet" href="/src/css/global.css" />
+  <link rel="stylesheet" href="/src/css/contact.css" />
+</head>
+<body data-page="contact">
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Karen Hsu — home">Karen Hsu</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/industry-work.html">Industry Work</a></li>
+      <li><a href="/creative-direction.html">Creative Direction</a></li>
+      <li><a href="/photography.html">Photography</a></li>
+      <li><a href="/contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <header class="page-hero">
+      <h1>Contact</h1>
+      <p>Let's Work Together</p>
+    </header>
+
+    <div class="container contact-layout">
+
+      <div class="contact-intro">
+        <p>Available for editorial commissions, brand collaborations, and creative partnerships.</p>
+        <div class="contact-channels">
+          <a href="mailto:hello@karenhsu.com" class="channel-link">
+            <span class="channel-label">Email</span>
+            <span class="channel-value">hello@karenhsu.com</span>
+          </a>
+          <a href="https://instagram.com/karenhsu" target="_blank" rel="noopener noreferrer" class="channel-link">
+            <span class="channel-label">Instagram</span>
+            <span class="channel-value">@karenhsu</span>
+          </a>
+          <a href="https://linkedin.com/in/karenhsu" target="_blank" rel="noopener noreferrer" class="channel-link">
+            <span class="channel-label">LinkedIn</span>
+            <span class="channel-value">Karen Hsu</span>
+          </a>
+        </div>
+      </div>
+
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        novalidate
+        aria-label="Contact form"
+      >
+        <!-- Honeypot — hidden from real users, catches bots -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+
+        <div class="form-field">
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error" />
+          <p class="field-error" id="name-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-error" />
+          <p class="field-error" id="email-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject <span aria-hidden="true">*</span></label>
+          <input type="text" id="subject" name="subject" required aria-required="true" aria-describedby="subject-error" />
+          <p class="field-error" id="subject-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-error"></textarea>
+          <p class="field-error" id="message-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span class="submit-label">Send Message</span>
+          <span class="submit-sending" aria-hidden="true" hidden>Sending…</span>
+        </button>
+
+        <div class="form-success" role="alert" aria-live="polite" hidden>
+          <p>Message sent — I'll be in touch soon.</p>
+        </div>
+
+        <div class="form-error-global" role="alert" aria-live="polite" hidden>
+          <p>Something went wrong. Please email me directly at <a href="mailto:hello@karenhsu.com">hello@karenhsu.com</a>.</p>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-socials" aria-label="Social links">
+      <a href="https://instagram.com/karenhsu" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://linkedin.com/in/karenhsu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hello@karenhsu.com">Email</a>
+    </nav>
+    <p class="footer-copy">© 2026 Karen Hsu</p>
+  </footer>
+
+  <script type="module" src="/src/js/nav.js"></script>
+  <script type="module" src="/src/js/contact.js"></script>
+</body>
+</html>
